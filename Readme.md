@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Черемухин-Рерберг](https://up.htmlacademy.ru/adaptive/13/user/429233).
-* Наставник: `Неизвестно`.
+* Наставник: Удовенко Марина (https://htmlacademy.ru/profile/id7570).
 
 ---
 
