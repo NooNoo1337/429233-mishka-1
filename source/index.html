@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
@@ -12,12 +13,12 @@
         <button class="main-nav__button"><span class="visually-hidden">Кнопка открытия меню</span></button>
       </div>
       <ul class="main-nav__list service-list">
-        <li class="service-list__item">Каталог товаров</li>
-        <li class="service-list__item">Вязание на заказ</li>
+        <li class="service-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="service-list__item"><a>Вязание на заказ</a></li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">Каталог товаров</li>
-        <li class="site-list__item">Вязание на заказ</li>
+        <li class="site-list__item"><a>Поиск по сайту</a></li>
+        <li class="site-list__item"><a>Корзина: пока пуста</a></li>
       </ul>
     </nav>
   </header>
@@ -25,14 +26,14 @@
     <section class="offer">
       <h1 class="offer__header">Милые штуки ручной работы для дома</h1>
       <div class="offer__buttons">
-        <a class="offer__button-interior">Предметы интерьера</a>
-        <a class="offer__button-toys">Детские игрушки</a>
+        <a class="offer__button offer__button--interior" href="#">Предметы интерьера</a>
+        <a class="offer__button offer__button--toys" href="#">Детские игрушки</a>
       </div>
     </section>
     <section class="popular-product">
       <h1 class="visually-hidden">Товар недели</h1>
-      <h2>Вязаные корзинки</h2>
-      <h3>Товар недели</h3>
+      <h2 class="popular-product__title">Вязаные корзинки</h2>
+      <h3 class="popular-product__subtitle">Товар недели</h3>
       <div class="popular-product__description">
         <h2 class="visually-hidden">Описание товара</h2>
         <p class="popular-product__text">
@@ -57,13 +58,13 @@
         </tr>
       </table>
       <div class="popular-product__preview">
-        <img src="http://placehold.it/150x100" class="popular-product__img" alt="Фотография вязаной корзинки" width="260" height="316">
+        <img src="img/triple-set-mobile@1x.jpg" class="popular-product__img" alt="Фотография вязаной корзинки" width="260" height="316">
       </div>
       <h2 class="popular-product__price">Цена: 990 руб.</h2>
       <button class="page-button page-button--preview" type="button">Заказать</button>
     </section>
     <section class="features">
-      <h2 class="features__header">Коротко о нас:</h2>
+      <h2 class="features__title">Коротко о нас:</h2>
       <ul class="features__list">
         <li class="features__item">
           <p class="features__description">Экологически чистые материалы</p>
@@ -86,7 +87,7 @@
       </ul>
     </section>
     <section class="review">
-      <h2 class="review__header">Отзывы</h2>
+      <h2 class="review__title">Отзывы</h2>
       <div class="review__list">
         <blockquote class="review__quote">
           <p class="review__text">
@@ -105,25 +106,25 @@
         </blockquote>
       </div>
       <div class="review__controls">
-        <button class="review__prev" type="button">Предыдущий отзыв</button>
-        <button class="review__next" type="button">Следующий отзыв</button>
+        <button class="review__button" type="button">Предыдущий отзыв</button>
+        <button class="review__button" type="button">Следующий отзыв</button>
       </div>
       <button class="page-button page-button--review">Написать</button>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__wrapper">
-        <p>
+        <p class="contacts__text">
           e-mail:
-          info@mimimishkashop.ru
+          <a href="#">info@mimimishkashop.ru</a>
         </p>
-        <p>
+        <p class="contacts__text">
           адресс:
           г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
         </p>
       </div>
       <div class="contacts__map">
-        <img src="http://placehold.it/150x100" alt="Наш адресс: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img src="img/map-mobile@1x.jpg" alt="Наш адресс: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </div>
       <button class="page-button page-button--contacts" type="button">Напишите нам</button>
     </section>
@@ -138,7 +139,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
     <section class="size-select">
@@ -158,7 +159,7 @@
             <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
             <label class="size-select__label" for="l-size">L</label>
           </p>
-          <input type="submit" class="size-select__send-button" value="Добавить">
+          <input type="submit" class="page-button size-select__send-button" value="Добавить">
         </form>
       </div>
     </section>
