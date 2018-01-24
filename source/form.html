@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
@@ -12,12 +13,12 @@
         <button class="main-nav__button"><span class="visually-hidden">Кнопка открытия меню</span></button>
       </div>
       <ul class="main-nav__list service-list">
-        <li class="service-list__item">Каталог товаров</li>
-        <li class="service-list__item">Вязание на заказ</li>
+        <li class="service-list__item"><a>Каталог товаров</a></li>
+        <li class="service-list__item"><a>Вязание на заказ</a></li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">Каталог товаров</li>
-        <li class="site-list__item">Вязание на заказ</li>
+        <li class="site-list__item"><a>Поиск по сайту</a></li>
+        <li class="site-list__item"><a>Корзина: пока пуста</a></li>
       </ul>
     </nav>
   </header>
@@ -111,7 +112,7 @@
             <p class="form__notice">
               <sup>*</sup>Поля обязательны для заполнения
             </p>
-            <input type="submit" class="form__send link-button" value="Отправить заказ">
+            <input type="submit" class="form__send page-button" value="Отправить заказ">
           </div>
         </form>
       </section>
