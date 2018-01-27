@@ -7,17 +7,31 @@
 }
 
 .size-select__title {
+  text-align: center;
   .title-mixin
 }
 
 .size-select__notice {
+  text-align: center;
   color: #444444;
   font-size: 15px;
   line-height: 30px;
+}
+
+.size-select__form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .size-select__send-button {
   color: @main-theme;
   border-color: @green-theme;
   background-color: @green-theme;
+}
+
+@media (min-width: @tablet-width) {
+  .size-select {
+    width: 568px;
+    padding: 0 100px;
+  }
 }

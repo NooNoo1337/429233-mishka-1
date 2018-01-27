@@ -1,9 +1,11 @@
 .offer {
-  width: 260px;
+  width: 320px;
   min-height: 490px;
-  padding: 0 30px;
   margin: 0 auto;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -18px;
   outline-color: blue;
   outline-style: dashed;
 }
@@ -13,6 +15,16 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
+  padding: 0 30px;
+  text-align: center;
+  padding-top: 66px;
+  margin: 0;
+}
+
+.offer__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 230px;
 }
 
 .offer__button {
@@ -20,6 +32,7 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
+  height: 100px;
 }
 
 .offer__button--interior {
@@ -28,4 +41,40 @@
 
 .offer__button--toys {
   background-color: #56c3b2;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    width: 668px;
+    padding: 0 50px;
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-position: center;
+  }
+  
+  .offer__header {
+    .tablet-title-mixin
+  }
+  
+  .offer__buttons {
+    flex-direction: row;
+    margin-top: 360px;
+  }
+  
+  .offer__button {
+    width: 334px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    width: 1050px;
+    padding: 0 100px;
+    background-color: #f9f9f9;
+  }
+  
+  .offer__button {
+    width: 525px;
+  }
 }

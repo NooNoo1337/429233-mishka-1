@@ -1,4 +1,7 @@
 .catalog {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
   outline-color: darkgoldenrod;
   outline-style: dotted;
 }
@@ -29,4 +32,44 @@
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: 668px;
+    padding: 0 50px;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 338px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card__photo {
+    height: 338px;
+    width: 334px;
+  }
+  
+  .product-card__price-section {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: 1150px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 318px;
+    height: 660px;
+  }
 }
