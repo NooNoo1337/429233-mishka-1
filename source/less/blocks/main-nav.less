@@ -1,119 +1,161 @@
 .main-nav {
-  width: 260px;
-  padding: 0 30px;
-  margin: 0 auto;
-  outline-style: dashed;
-}
-
-.main-nav__logo-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-  height: 84px;
-}
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 320px;
+  border-bottom: 1px solid @stroke-color;
 
-.main-nav__list {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  list-style: none;
-  display: none;
-  margin: 0;
-  padding: 0;
-}
+  &--js-opened {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
 
-.main-nav__button {
-  width: 22px;
-  height: 22px;
-  margin-left: 60px;
-  background: none;
-  border: none;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-size: 24px;
-}
+  .main-nav__logo-wrapper {
+    .block-padding;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    height: 78px;
+    box-sizing: border-box;
 
-.main-nav__delivery {
-  display: none;
+    border-top: 1px solid @stroke-color;
+  }
+
+  .main-nav__logo {
+    width: 86px;
+    height: 35px;
+    margin-left: 86px;
+    margin-right: auto;
+    font-size: 0;
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.6;
+      outline: none;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__button {
+    width: 21px;
+    height: 21px;
+    margin: auto 0;
+
+    font-size: 0;
+    line-height: 0;
+
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-menu-open.svg");
+    border: none;
+
+    &--hide {
+      display: none;
+    }
+
+    &--opened {
+      background-image: url("../img/icon-menu-close.svg");
+    }
+  }
+
+  .main-nav__list {
+    &--closed {
+      display: none;
+    }
+  }
+
+  .main-nav__delivery {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: 668px;
-    padding: 0 50px;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-  }
+    justify-content: space-between;
+    align-items: center;
+    width: @tablet-width;
+    border-bottom: none;
 
-  .main-nav__list {
-    display: block;
-  }
+    &--js-opened {
+      position: static;
+    }
 
-  .main-nav__logo-wrapper {
-    width: 115px;
-    height: 60px;
-    order: 1;
-  }
+    .main-nav__logo-wrapper {
+      width: 370px;
+      padding-left: 48px;
+      border-top: none;
+    }
 
-  .main-nav__button {
-    display: none;
-  }
+    .main-nav__logo {
+      width: 113px;
+      height: 46px;
+      margin-left: 0;
+      /*background-image: url("../img/logo-tablet.svg");*/
+      background-position: center;
+    }
 
-  .site-list {
-    display: flex;
-    height: 85px;
-    width: 350px;
-    order: 2;
-  }
+    .main-nav__button {
+      display: none;
+    }
 
-  .service-list {
-    height: 85px;
-    display: flex;
-    order: 3;
-  }
+    .main-nav__list {
+      &--closed {
+        display: flex;
+      }
+    }
 
-  .main-nav__delivery {
-    display: block;
-    order: 4;
-  }
+    .main-nav__delivery {
+      display: block;
+      order: 2;
+      z-index: 1;
+      padding-top: 17px;
+      font-size: 15px;
+      color: @grey-color;
 
-  .news-list {
-    display: none;
+      &:hover,
+      &:focus {
+        color: rgba(0, 0, 0, 0.6);
+        outline: none;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .block-padding;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 1050px;
-    padding: 0 100px;
-  }
+    width: @desktop-width;
+    align-items: center;
 
-  .main-nav__logo-wrapper {
-    width: 170px;
-    height: 88px;
-    order: 2;
-  }
+    .main-nav__logo-wrapper {
+      width: auto;
+      flex-grow: 1;
+      padding: 0;
+    }
 
-  .service-list {
-    height: 85px;
-    display: flex;
-    order: 1;
-  }
-
-  .site-list {
-    display: flex;
-    height: 85px;
-    width: 350px;
-    order: 2;
-  }
-
-  .news-list {
-    display: flex;
-    order: 3;
+    .main-nav__logo {
+      width: 149px;
+      height: 73px;
+      margin: 0;
+      /*background-image: url("../img/logo-desktop.svg");*/
+    }
   }
 }

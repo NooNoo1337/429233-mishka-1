@@ -1,11 +1,16 @@
 .page-footer {
-  width: 260px;
-  padding: 0 30px;
-  margin: 0 auto;
-  background-color: #f1f1f1;
+  width: auto;
+  background-color: @grey-background-color;
   outline-color: darkblue;
   outline-style: dotted;
 }
+
+.page-footer__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 
 .social__list {
   list-style: none;
@@ -23,19 +28,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 668px;
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 1050px;
     padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
   }
 }

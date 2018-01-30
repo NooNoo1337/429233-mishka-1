@@ -46,13 +46,26 @@
   }
 
   .review__title {
+    order: 1;
     .tablet-title-mixin
+  }
+
+  .review__list {
+    width: 600px;
+    order: 2;
+  }
+
+  .review__controls {
+    order: 4;
+    margin-top: auto;
+    margin-left: -140px;
   }
 
   .review__wrapper {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 320px;
   }
 }
 
@@ -62,7 +75,12 @@
     padding: 0 100px;
   }
 
-  .review__quote-wrapper {
+  .review__wrapper {
+    height: 300px;
     padding-left: 175px;
+  }
+
+  .review__list {
+    width: 690px;
   }
 }

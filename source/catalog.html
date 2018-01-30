@@ -3,47 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo" href="#"><img class="page-header__logo-image" src="http://placehold.it/150x100" width="100" height="40" alt="Логотип Мишки"></a>
-        <button class="main-nav__button"><span class="visually-hidden">Кнопка открытия меню</span></button>
+        <a class="main-nav__logo" href="#"></a>
+        <button class="main-nav__button" type="button">Кнопка открытия меню</button>
       </div>
       <ul class="main-nav__list service-list">
-        <li class="service-list__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="service-list__item"><a href="form.html">Вязание на заказ</a></li>
+        <li class="service-list__item">
+          <a class="service-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="service-list__item">
+          <a class="service-list__link" href="form.html">Вязание на заказ</a>
+        </li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a>Поиск по сайту</a></li>
-        <li class="site-list__item"><a>Корзина: пока пуста</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--basket" href="#">Корзина: пока пуста</a></li>
       </ul>
-      <ul class="main-nav__list news-list">
-        <li class="site-list__item"><a>Новые поступления</a></li>
-        <li class="site-list__item"><a>Распродажа</a></li>
+      <ul class="news-list">
+        <li class="news-list__item"><a class="news-list__link" href="#">Новые поступления</a></li>
+        <li class="news-list__item"><a class="news-list__link" href="#">Распродажа</a></li>
       </ul>
       <a href="#" class="main-nav__delivery">Бесплатная доставка по России</a>
     </nav>
   </header>
-  <main class="page-catalog">
-    <h1 class="page-catalog__title">Каталог товаров</h1>
+  <main class="inner-page">
+    <div class="inner-page__container">
+      <h1 class="inner-page__title">Каталог товаров</h1>
+    </div>
     <section class="catalog">
-      <div class="catalog__item product-card">
+      <article class="catalog__item product-card">
         <div class="product-card__photo">
-          <a href="#"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Зайчик-попрыгайчик"></a>
+          <a href="#">
+            <img src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Зайчик-попрыгайчик">
+          </a>
         </div>
-        <div class="product-card__description">
-          <h2 class="product-card__title"><a class="product-card__link" href="#">Зайчик-попрыгайчик</a></h2>
-          <p class="product-card__info">Рост 30 см, вес 200 г</p>
-        </div>
-        <div class="product-card__price-section">
+        <h2 class="product-card__title"><a class="product-card__link" href="#">Зайчик-попрыгайчик</a></h2>
+        <p class="product-card__info">Рост 30 см, вес 200 г</p>
+        <p class="product-card__price-section">
           <h3 class="product-card__price">1200 руб.</h3>
           <img src="http://placehold.it/150x100" class="product-card__icon" width="20" height="24">
-        </div>
-      </div>
-      <div class="catalog__item product-card">
+        </p>
+      </article>
+      <article class="catalog__item product-card">
         <div class="product-card__photo">
           <a href="#"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="196" alt="Корзинка для белья"></a>
         </div>
@@ -55,8 +63,8 @@
           <h3 class="product-card__price">690 руб.</h3>
           <img src="http://placehold.it/150x100" class="product-card__icon" width="20" height="24">
         </div>
-      </div>
-      <div class="catalog__item product-card">
+      </article>
+      <article class="catalog__item product-card">
         <div class="product-card__photo">
           <a href="#"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="196" alt="Большая корзинка для игрушек"></a>
         </div>
@@ -68,8 +76,8 @@
           <h3 class="product-card__price">1500 руб.</h3>
           <img src="http://placehold.it/150x100" class="product-card__icon" width="20" height="24">
         </div>
-      </div>
-      <div class="promo promo-card">
+      </article>
+      <article class="promo promo-card">
         <h2 class="promo-card__title">Процесс производства</h2>
         <img class="promo-card__photo" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео о процессе производства">
         <p class="promo__description">
@@ -77,20 +85,22 @@
           мы сняли для вас подобное видео о том, как появляются наши товары.
         </p>
         <button class="promo__button page-button">Сделать заказ</button>
-      </div>
+      </article>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
-        <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a></li>
-        <li class="social__item"><a class="social__link social__link--twitter" href="#">Мы в твиттере</a></li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#">Мы в твиттере</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
     </div>
   </footer>
   <section class="size-select">

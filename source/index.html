@@ -11,31 +11,45 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo" href="#"><img class="page-header__logo-image" src="http://placehold.it/150x100" width="100" height="40" alt="Логотип Мишки"></a>
-        <button class="main-nav__button"><span class="visually-hidden">Кнопка открытия меню</span></button>
+        <a class="main-nav__logo" href="#"></a>
+        <button class="main-nav__button" type="button">Кнопка открытия меню</button>
       </div>
       <ul class="main-nav__list service-list">
-        <li class="service-list__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="service-list__item"><a href="form.html">Вязание на заказ</a></li>
+        <li class="service-list__item">
+          <a class="service-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="service-list__item">
+          <a class="service-list__link" href="form.html">Вязание на заказ</a>
+        </li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a>Поиск по сайту</a></li>
-        <li class="site-list__item"><a>Корзина: пока пуста</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--basket" href="#">Корзина: пока пуста</a></li>
       </ul>
-      <ul class="main-nav__list news-list">
-        <li class="site-list__item"><a>Новые поступления</a></li>
-        <li class="site-list__item"><a>Распродажа</a></li>
+      <ul class="news-list">
+        <li class="news-list__item"><a class="news-list__link" href="#">Новые поступления</a></li>
+        <li class="news-list__item"><a class="news-list__link" href="#">Распродажа</a></li>
       </ul>
       <a href="#" class="main-nav__delivery">Бесплатная доставка по России</a>
     </nav>
   </header>
   <main class="page-main">
     <section class="offer">
-      <h1 class="offer__header">Милые штуки ручной<br>работы для дома</h1>
-      <div class="offer__buttons">
-        <a class="offer__button offer__button--interior" href="#">Предметы интерьера</a>
-        <a class="offer__button offer__button--toys" href="#">Детские игрушки</a>
+      <div class="offer__wrapper">
+        <h1 class="offer__title">Милые штуки ручной<br>работы для дома</h1>
       </div>
+      <ul class="offer__menu inner-menu">
+        <li class="inner-menu__button inner-menu__button--light">
+          <a href="#" class="inner-menu__link inner-menu__link--light">
+            Предметы<br>интерьера
+          </a>
+        </li>
+        <li class="inner-menu__button inner-menu__button--dark">
+          <a href="#" class="inner-menu__link inner-menu__link--dark">
+            Детские<br>игрушки
+          </a>
+        </li>
+      </ul>
     </section>
     <section class="popular-product">
       <h1 class="visually-hidden">Товар недели</h1>
@@ -92,7 +106,7 @@
       </div>
     </section>
     <section class="review">
-      <div class="review__quote-wrapper">
+      <div class="review__wrapper">
         <h2 class="review__title">Отзывы</h2>
         <div class="review__list">
           <blockquote class="review__quote">
@@ -111,8 +125,6 @@
             <p class="review__author-email">@misssssiskras</p>
           </blockquote>
         </div>
-      </div>
-      <div class="review__wrapper">
         <div class="review__controls">
           <button class="review__button" type="button">Предыдущий отзыв</button>
           <button class="review__button" type="button">Следующий отзыв</button>
@@ -121,22 +133,25 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__text">
-          e-mail: <a href="#">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__text">
-          адресс: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-        </p>
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__address">
+          <p class="contacts__text">
+            e-mail: <a href="#">info@mimimishkashop.ru</a>
+          </p>
+          <p class="contacts__text">
+            адресс: г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101
+          </p>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map-mobile@1x.jpg" alt="Наш адресс: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </div>
+        <button class="page-button page-button--contacts" type="button">Напишите нам</button>
       </div>
-      <div class="contacts__map">
-        <img src="img/map-mobile@1x.jpg" alt="Наш адресс: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-      </div>
-      <button class="page-button page-button--contacts" type="button">Напишите нам</button>
     </section>
   </main>
     <footer class="page-footer">
+      <div class="page-footer__wrapper">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
@@ -148,26 +163,27 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
+      </div>
     </footer>
     <section class="size-select">
       <div class="size-select__wrapper">
-        <h2 class="size-select__title">Добавить в корзину</h2>
-        <p class="size-select__notice">Выберите размер:</p>
-        <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="size-select__input">
-            <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
-            <label class="size-select__label" for="s-size">S</label>
-          </p>
-          <p class="size-select__input">
-            <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
-            <label class="size-select__label" for="m-size">M</label>
-          </p>
-          <p class="size-select__input">
-            <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
-            <label class="size-select__label" for="l-size">L</label>
-          </p>
-        </form>
-        <input type="submit" class="page-button size-select__send-button" value="Добавить">
+          <h2 class="size-select__title">Добавить в корзину</h2>
+          <p class="size-select__notice">Выберите размер:</p>
+          <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="size-select__input">
+              <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
+              <label class="size-select__label" for="s-size">S</label>
+            </p>
+            <p class="size-select__input">
+              <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
+              <label class="size-select__label" for="m-size">M</label>
+            </p>
+            <p class="size-select__input">
+              <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
+              <label class="size-select__label" for="l-size">L</label>
+            </p>
+          </form>
+          <input type="submit" class="page-button size-select__send-button" value="Добавить">
       </div>
     </section>
   </body>
