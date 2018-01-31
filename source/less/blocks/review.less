@@ -33,3 +33,54 @@
   background-color: @main-theme;
   border: 1px solid #ececec;
 }
+
+.review__controls {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    width: 668px;
+    padding: 0 50px;
+    display: flex;
+  }
+
+  .review__title {
+    order: 1;
+    .tablet-title-mixin
+  }
+
+  .review__list {
+    width: 600px;
+    order: 2;
+  }
+
+  .review__controls {
+    order: 4;
+    margin-top: auto;
+    margin-left: -140px;
+  }
+
+  .review__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 320px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    width: 1050px;
+    padding: 0 100px;
+  }
+
+  .review__wrapper {
+    height: 300px;
+    padding-left: 175px;
+  }
+
+  .review__list {
+    width: 690px;
+  }
+}

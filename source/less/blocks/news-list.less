@@ -1,0 +1,40 @@
+.news-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    .news-list__item {
+      padding: 17px 12px 0 50px;
+
+      &:nth-child(2n+2) {
+        padding-right: 0;
+      }
+    }
+
+    .news-list__link {
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+      color: @black-color;
+      border: none;
+
+      &:hover,
+      &:focus {
+        color: rgba(0, 0, 0, 0.6);
+        outline: none;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

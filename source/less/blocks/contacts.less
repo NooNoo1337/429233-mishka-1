@@ -21,3 +21,66 @@
 .page-button--contacts {
   padding: 14px 52px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 768px;
+    padding: 0;
+  }
+
+  .contacts__title {
+    .tablet-title-mixin
+  }
+
+  .contacts__wrapper {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__address {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__text {
+    width: 240px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1250px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    padding-left: 275px;
+    height: 460px;
+  }
+
+  .contacts__title {
+    order: 1;
+    margin-top: 80px;
+  }
+
+  .contacts__address {
+    flex-direction: column;
+    margin-top: auto;
+    order: 2;
+  }
+
+  .contacts__text {
+    flex-direction: column;
+    order: 2;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 460px;
+    order: 4;
+  }
+}

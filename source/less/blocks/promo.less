@@ -17,5 +17,52 @@
 }
 
 .promo__button {
-  padding: 14px 24px;
+  padding: 14px 14px;
+  min-width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo-card__photo {
+    width: 668px;
+    height: 460px;
+    order: 1;
+  }
+
+  .promo-card__title {
+    order: 2;
+  }
+
+  .promo__description {
+    order: 3;
+  }
+
+  .promo__button {
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    width: 1150px;
+    height: 460px;
+    flex-wrap: wrap;
+  }
+
+  .promo-card__photo {
+    width: 680px;
+    height: 460px;
+  }
+
+  .promo__description {
+    max-width: 230px;
+  }
+
+  .promo__button {
+    max-width: 230px;
+  }
 }
