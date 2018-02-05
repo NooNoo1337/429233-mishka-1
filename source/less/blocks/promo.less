@@ -53,30 +53,30 @@
 }
 
 .promo__play {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-    width: 102px;
-    height: 78px;
+  width: 102px;
+  height: 78px;
 
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
-    &:hover,
-    &:focus {
-      transform: translate(-50%, -50%) scale(1.2);
-      background-size: cover;
-      outline: none;
-    }
-
-    &:active {
-      transform: translate(-50%, -50%) scale(0.8);
-      opacity: 0.3;
-    }
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+    background-size: cover;
+    outline: none;
   }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .promo {
@@ -136,14 +136,14 @@
 
   .promo-card__title {
     width: 160px;
-    padding: 98px 42px 24px 0px;
+    padding: 98px 42px 24px 0;
     margin-left: -40px;
 
     &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 40%;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 40%;
     }
   }
 
