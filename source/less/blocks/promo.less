@@ -1,30 +1,89 @@
 .promo {
-  outline-color: cyan;
-  outline-style: dotted;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.promo-card {
+  border: 1px solid #e6e4e3;
 }
 
 .promo-card__title {
+  position: relative;
   color: @black-color;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  width: 145px;
+  padding: 27px 42px 24px 88px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .promo__description {
   color: @grey-color;
   font-size: 13px;
   line-height: 24px;
+  width: 190px;
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.promo-card__photo {
+  position: relative;
 }
 
 .promo__button {
   padding: 14px 14px;
-  min-width: 260px;
+  width: 190px;
+  margin: 0 30px;
+  margin-top: 35px;
 }
+
+.promo__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 102px;
+    height: 78px;
+
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover,
+    &:focus {
+      transform: translate(-50%, -50%) scale(1.2);
+      background-size: cover;
+      outline: none;
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3;
+    }
+  }
 
 @media (min-width: @tablet-width) {
   .promo {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 110px;
   }
 
   .promo-card__photo {
@@ -35,14 +94,27 @@
 
   .promo-card__title {
     order: 2;
+    font-size: 20px;
+    line-height: 24px;
+    width: 260px;
+    padding: 27px 42px 24px 104px;
+    margin: 0;
   }
 
   .promo__description {
     order: 3;
+    width: 600px;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 40px;
+    margin-top: 8px;
   }
 
   .promo__button {
     order: 4;
+    width: 585px;
+    margin: 0 40px;
+    margin-top: 30px;
   }
 }
 
@@ -51,6 +123,28 @@
     width: 1150px;
     height: 460px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .promo-card__title {
+    width: 160px;
+    padding: 98px 42px 24px 0px;
+    margin-left: -40px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    }
   }
 
   .promo-card__photo {
@@ -60,9 +154,13 @@
 
   .promo__description {
     max-width: 230px;
+    padding: 0;
+    margin-left: -40px;
   }
 
   .promo__button {
     max-width: 230px;
+    margin-left: -35px;
+    margin-top: 45px;
   }
 }

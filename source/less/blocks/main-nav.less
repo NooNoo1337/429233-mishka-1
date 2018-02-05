@@ -58,15 +58,15 @@
     background: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/icon-menu-open.svg");
+    background-image: url("../img/icon-menu-close.svg");
     border: none;
 
-    &--hide {
-      display: none;
+    &--show {
+      display: block;
     }
 
-    &--opened {
-      background-image: url("../img/icon-menu-close.svg");
+    &--closed {
+      background-image: url("../img/icon-menu-open.svg");
     }
   }
 
@@ -157,5 +157,9 @@
       margin: 0;
       /*background-image: url("../img/logo-desktop.svg");*/
     }
+
+    .main-nav__delivery {
+    padding-right: 150px;
+  }
   }
 }
