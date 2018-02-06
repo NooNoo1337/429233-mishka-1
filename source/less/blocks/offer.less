@@ -18,6 +18,8 @@
     line-height: 30px;
     font-weight: bold;
     text-align: center;
+    width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -39,17 +41,14 @@
     }
 
     .offer__title {
-      padding: 0 80px;
+      padding: 0 60px;
       padding-top: 83px;
       letter-spacing: 0.2px;
       .tablet-title-mixin;
+      width: 550px;
     }
 
     .offer__menu {
-      max-width: 940px;
-      min-width: 768px;
-      width: 100%;
-      flex-grow: 1;
       margin: 0 auto;
       margin-top: auto;
       box-sizing: border-box;
@@ -75,11 +74,12 @@
     .offer__menu {
       max-width: 1150px;
     }
+    
+    .offer__title {
+      letter-spacing: -0.2px;
+      width: 800px;
+      .desktop-title-mixin;
+      padding: 82px 126px;
   }
-
-  .offer__title {
-    letter-spacing: 0;
-    width: 800px;
-    .desktop-title-mixin;
   }
 }
