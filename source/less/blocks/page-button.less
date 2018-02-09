@@ -8,6 +8,7 @@
   background-color: @main-theme;
   padding: 14px 14px;
   cursor: pointer;
+  width: 260px;
 
   &:hover,
   &:focus {
@@ -21,20 +22,31 @@
   }
 }
 
+.page-button--preview {
+  margin-top: 25px;
+}
+
+.page-button--review {
+  margin-top: 42px;
+}
+
 @media (min-width: @tablet-width) {
   .page-button--contacts {
-    max-width: 260px;
+    width: 230px;
     margin: 0 auto;
   }
 
   .page-button--review {
     order: 3;
     max-width: 260px;
-    margin-left: -140px;
+    margin-left: -106px;
+    width: 174px;
+    margin-top: 2px;
   }
 
   .page-button--preview {
-    width: 260px;
+    width: 293px;
+    margin-top: 33px;
   }
 }
 
@@ -43,6 +55,11 @@
     margin-top: auto;
     margin-left: 0;
     order: 3;
-    width: 265px;
+    width: 230px;
+  }
+
+  .page-button--review {
+    margin-left: 12px;
+    margin-top: 11px;
   }
 }

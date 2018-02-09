@@ -1,9 +1,11 @@
 .review {
+  margin-top: 56px;
+}
+
+.review__wrapper {
   width: 260px;
   padding: 0 30px;
   margin: 0 auto;
-  outline-color: darkorchid;
-  outline-style: dotted;
 }
 
 .review__title {
@@ -14,6 +16,9 @@
   color: @grey-color;
   font-size: 15px;
   line-height: 30px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 27px;
 }
 
 .review__author-name {
@@ -26,23 +31,32 @@
 .review__author-email {
   color: @grey-color;
   font-size: 17px;
+  margin: 0;
+  margin-top: 4px;
 }
 
 .review__button {
   width: 130px;
+  height: 50px;
   background-color: @main-theme;
   border: 1px solid #ececec;
 }
 
 .review__controls {
   display: flex;
+  margin-top: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .review {
-    width: 668px;
-    padding: 0 50px;
     display: flex;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 350px auto;
+    height: 460px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .review__title {
@@ -57,7 +71,7 @@
 
   .review__controls {
     order: 4;
-    margin-top: auto;
+    margin-top: 230px;
     margin-left: -140px;
   }
 
@@ -65,22 +79,66 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 320px;
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 77px;
+    height: 350px;
+  }
+
+  .review__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 58px;
+    width: 680px;
+  }
+
+  .review__author-name {
+    letter-spacing: 0.7px;
+  }
+
+  .review__author-email {
+    margin: 0;
+    margin-top: 6px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .review {
     width: 1050px;
-    padding: 0 100px;
   }
 
   .review__wrapper {
     height: 300px;
+    width: 875px;
+    padding: 0 100px;
     padding-left: 175px;
+    margin-top: 70px;
+  }
+
+  .review__title {
+    .desktop-title-mixin;
+    margin-left: -2px;
+  }
+
+  .review__text {
+    margin-top: 50px;
+    margin-bottom: 38px;
+    width: 770px;
+  }
+
+  .review__author-email {
+    margin-top: 6px;
   }
 
   .review__list {
     width: 690px;
+  }
+
+  .review__controls {
+    margin-left: -210px;
+    margin-top: 240px;
   }
 }
