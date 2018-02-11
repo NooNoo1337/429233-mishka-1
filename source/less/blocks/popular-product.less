@@ -1,8 +1,23 @@
 .popular-product {
   width: 260px;
+  position: relative;
   padding: 0 30px;
   margin: 0 auto;
   margin-top: 28px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -44px;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 7px;
+  }
 }
 
 .popular-product__title {
@@ -51,6 +66,14 @@
     width: 668px;
     padding: 0 50px;
     margin-top: 40px;
+    
+    &::after {
+      height: 16px;
+      width: 768px;
+      bottom: -65px;
+      background-size: 768px 16px;
+      background-position: left 20px center;
+    }
   }
 
   .popular-product__introduction {
@@ -118,6 +141,16 @@
   .popular-product {
     width: 1050px;
     padding: 0 100px;
+    
+    &::after {
+      left: 100px;
+      height: 23px;
+      width: 1050px;
+      bottom: -13px;
+      background-repeat: repeat-x;
+      background-position: 26px center;
+      background-size: 1050px 23px;
+    }
   }
 
   .popular-product__introduction {
