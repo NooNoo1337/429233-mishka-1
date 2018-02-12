@@ -22,10 +22,23 @@
 @media (min-width: @tablet-width) {
   .inner-page {
     .inner-page__container {
+      position: relative;
       min-height: 225px;
       padding-top: 44px;
       border-top: 1px solid #dfdfdf;
       margin-top: -41px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        height: 23px;
+        width: 100%;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: auto 23px;
+      }
     }
 
     .inner-page__title {
@@ -41,6 +54,12 @@
     .inner-page__container {
       min-height: 254px;
       padding-top: 60px;
+
+      &::after {
+        bottom: -20px;
+        height: 34px;
+        background-size: 1150px 34px;
+      }
     }
 
     .inner-page__title {
