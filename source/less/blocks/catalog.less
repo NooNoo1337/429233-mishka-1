@@ -65,12 +65,16 @@
   }
 
   .product-card:not(:first-child) {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   .product-card__title {
     font-size: 20px;
     width: 240px;
+  }
+
+  .product-card__title:nth-of-type(2n) {
+    margin-bottom: 8px;
   }
 
   .product-card__info {
@@ -87,7 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 338px;
+    height: 334px;
     flex-wrap: wrap;
   }
 
@@ -105,7 +109,8 @@
     display: flex;
     align-items: center;
     width: 270px;
-    padding-bottom: 32px;
+    padding-top: 22px;
+    padding-bottom: 27px;
     margin-right: 20px;
   }
 }
