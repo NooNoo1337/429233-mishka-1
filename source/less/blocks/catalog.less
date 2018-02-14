@@ -29,6 +29,14 @@
 
 .product-card__link {
   color: @black-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__info {
@@ -55,6 +63,18 @@
   padding-top: 24px;
   padding-bottom: 25px;
   border-top: 1px solid #e6e4e3;
+}
+
+.product-card__icon {
+  fill: #d3d2d2;
+
+  &:hover {
+    fill: @green-theme;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
