@@ -29,4 +29,3 @@ menuButton.classList.add("main-nav__button--closed");
 menuButton.addEventListener("click", function(evt) {
   changeMenuState(menuLists, evt);
 });
-
