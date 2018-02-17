@@ -79,14 +79,14 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 350px auto;
-    height: 460px;
+    height: 540px;
     width: 768px;
     margin: 0 auto;
 
     &::after {
       height: 16px;
       width: 100%;
-      bottom: -83px;
+      bottom: 0;
       background-size: 768px 16px;
       background-position: left 20px center;
     }
@@ -109,7 +109,7 @@
   .review__controls {
     order: 4;
     margin-top: 230px;
-    margin-left: -140px;
+    margin-left: -104px;
   }
 
   .review__wrapper {
@@ -143,18 +143,20 @@
 
   .review__button {
     border: none;
+    width: 84px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .review {
     width: 1050px;
+    height: 550px;
 
     &::after {
       left: 0;
       height: 23px;
       width: 1050px;
-      bottom: -90px;
+      bottom: 0;
       background-repeat: repeat-x;
       background-position: 26px center;
       background-size: 1050px 23px;
@@ -189,7 +191,11 @@
   }
 
   .review__controls {
-    margin-left: -210px;
-    margin-top: 240px;
+    margin-left: -174px;
+    margin-top: 243px;
+  }
+  
+  .review__button {
+    width: 86px;
   }
 }
