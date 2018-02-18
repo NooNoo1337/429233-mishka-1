@@ -2,13 +2,10 @@
   height: 505px;
   margin-top: 30px;
   margin-bottom: 56px;
-}
-
-.promo-card {
   border: 1px solid #e6e4e3;
 }
 
-.promo-card__title {
+.promo__title {
   position: relative;
   color: @black-color;
   font-size: 17px;
@@ -42,7 +39,7 @@
   padding-left: 34px;
 }
 
-.promo-card__photo {
+.promo__photo {
   position: relative;
 }
 
@@ -88,19 +85,24 @@
     margin-bottom: 64px;
   }
 
-  .promo-card__photo {
+  .promo__photo {
     width: 668px;
     height: 460px;
     order: 1;
   }
 
-  .promo-card__title {
+  .promo__title {
     order: 2;
     font-size: 20px;
     line-height: 24px;
     width: 260px;
     padding: 35px 40px 24px 106px;
     margin: 0;
+
+    &::before {
+      left: 40px;
+      top: 55%;
+    }
   }
 
   .promo__description {
@@ -137,20 +139,18 @@
     }
   }
 
-  .promo-card__title {
+  .promo__title {
     width: 160px;
     padding: 96px 42px 25px 0;
     margin-left: 63px;
 
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 40%;
+      left: 2px;
+      top: 35%;
     }
   }
 
-  .promo-card__photo {
+  .promo__photo {
     width: 683px;
     height: 460px;
   }
