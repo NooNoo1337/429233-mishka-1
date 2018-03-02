@@ -38,6 +38,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
 ![Иллюстрация к проекту](https://github.com/NooNoo1337/HB/raw/master/img/review@1x.jpg)
+
 ![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
 
 Клонировать репозиторий можно так:
