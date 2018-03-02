@@ -41,6 +41,9 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ![alt text](https://raw.githubusercontent.com/NooNoo1337/429233-mishka-1/master/img/to/review@1x.jpg)
 
+<img width="769" alt="" src="./img/review@1x.jpg">
+
+
 Клонировать репозиторий можно так:
 
 ```
