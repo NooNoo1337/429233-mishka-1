@@ -39,6 +39,8 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
 ![Иллюстрация к проекту](https://github.com/NooNoo1337/429233-mishka-1/raw/master/img/review@1x.jpg)
 
+![alt text](https://raw.githubusercontent.com/NooNoo1337/429233-mishka-1/master/img/to/review@1x.jpg)
+
 Клонировать репозиторий можно так:
 
 ```
