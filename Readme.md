@@ -37,7 +37,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
-(https://github.com/NooNoo1337/429233-mishka/raw/master/img/review@1x.jpg)
+https://github.com/NooNoo1337/429233-mishka/raw/master/img/review@1x.jpg
 
 Клонировать репозиторий можно так:
 
